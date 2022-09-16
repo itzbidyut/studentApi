@@ -5,7 +5,7 @@ const port = 5000;
 
 app.use(express.json());
 
-app.use("/v1/students", studentRoutes);
+app.use("/", studentRoutes);
 
 app.get("/", (req, res) => {
   res.send("hello world sefww");
